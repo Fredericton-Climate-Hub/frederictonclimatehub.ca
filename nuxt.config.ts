@@ -4,6 +4,9 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
   ],
   devtools: { enabled: true },
+  app: {
+    rootId: 'app',
+  },
   css: [
     '~/assets/theme.css',
   ],
