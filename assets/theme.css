@@ -4,6 +4,6 @@
 
 @layer base {
   #app {
-    @apply flex flex-col h-dvh;
+    @apply flex flex-col h-dvh text-100;
   }
 }

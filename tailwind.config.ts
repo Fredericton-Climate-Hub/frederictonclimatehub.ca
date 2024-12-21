@@ -1,4 +1,4 @@
-import tailwindForms from '@tailwindcss/forms'
+import tailwindForms from "@tailwindcss/forms"
 import type { Config } from 'tailwindcss'
 
 export default {
@@ -16,6 +16,7 @@ export default {
       'metallic-800': '#c5cad3',
       'metallic-600': '#8b96a7',
       'metallic-400': '#586374',
+      'green-900': '#d9f2c3',
       'green-700': '#b9dc89',
       'green-500': '#8ac53a',
       'green-300': '#537623',
@@ -29,6 +30,31 @@ export default {
       'red-400': '#c81e04',
       'red-300': '#961703',
       'black': '#000000',
+    },
+    fontSize: {
+      75: '0.75rem',
+      100: '18px',
+      125: '1.25rem',
+      150: '1.5rem',
+      200: '2rem',
+      400: '4rem',
+    },
+    spacing: {
+      25: '0.25rem',
+      50: '0.5rem',
+      75: '0.75rem',
+      100: '1rem',
+      125: '1.25rem',
+      150: '1.5rem',
+      175: '1.75rem',
+      200: '2rem',
+      225: '2.25rem',
+      250: '2.5rem',
+      300: '3rem',
+      350: '3.5rem',
+      400: '4rem',
+      450: '4.5rem',
+      500: '5rem',
     },
   },
   plugins: [
