@@ -118,5 +118,23 @@
         </div>
       </div>
     </section>
+
+    <!-- Mission / Goals -->
+    <section
+      class="section-fs bg-green-900"
+      style="background-image: radial-gradient(rgba(83, 118, 35, 0.5) 1px, rgba(232, 243, 216, 0.5) 1px); background-size: 30px 30px;"
+    >
+      <h2 class="w-fit rounded-md bg-green-300 px-100 py-50 text-center uppercase text-green-900">
+        Our Goal
+      </h2>
+      <div class="w-3/4 rounded-xl border border-dashed border-green-300 bg-green-700 p-200 text-125 text-green-100 xl:text-150 2xl:w-1/2">
+        The advancement of climate action through education and mobilization in the Greater Fredericton Region, empowering members of our community to become environmentally conscious residents who contribute to a resilient, equitable, and livable city for all.
+      </div>
+      <div class="w-full flex-none px-200 sm:w-3/4 sm:px-0 lg:w-1/2">
+        <img
+          src="/img/fredericton.png"
+        >
+      </div>
+    </section>
   </div>
 </template>
