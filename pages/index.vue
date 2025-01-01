@@ -136,5 +136,34 @@
         >
       </div>
     </section>
+
+    <!-- Topics -->
+    <section class="section-fs border-t border-dashed border-orange-300 bg-orange-900">
+      <h2 class="mx-auto w-fit rounded-md bg-orange-300 px-100 py-50 text-center uppercase text-orange-900">
+        Climate Adaptation in Fredericton
+      </h2>
+      <div class="mx-auto flex w-4/5 flex-row flex-wrap justify-center gap-100 2xl:w-3/4">
+        <div class="flex aspect-square w-full flex-col items-center justify-start xs:w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6">
+          <img src="/img/woman-bike-laptop.png">
+          <span class="w-2/3 rounded-lg text-125 font-thin uppercase leading-snug tracking-widest text-orange-300">Eco Mobility</span>
+        </div>
+        <div class="flex aspect-square w-full flex-col items-center justify-start xs:w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6">
+          <img src="/img/circular-economy.png">
+          <span class="w-2/3 rounded-lg text-125 font-thin uppercase leading-snug tracking-widest text-orange-300">Circular Economy</span>
+        </div>
+        <div class="flex aspect-square w-full flex-col items-center justify-start xs:w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6">
+          <img src="/img/green-home.png">
+          <span class="w-2/3 rounded-lg text-125 font-thin uppercase leading-snug tracking-widest text-orange-300">Sustainable Buildings</span>
+        </div>
+        <div class="flex aspect-square w-full flex-col items-center justify-start xs:w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6">
+          <img src="/img/light-bulb.png">
+          <span class="w-2/3 rounded-lg text-125 font-thin uppercase leading-snug tracking-widest text-orange-300">Renewable Energy</span>
+        </div>
+        <div class="flex aspect-square w-full flex-col items-center justify-start xs:w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6">
+          <img src="/img/house-flooded.png">
+          <span class="w-2/3 rounded-lg text-125 font-thin uppercase leading-snug tracking-widest text-orange-300">Mitigation</span>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
