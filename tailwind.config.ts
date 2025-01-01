@@ -8,6 +8,11 @@ export default {
     'pages/**/*.vue',
   ],
   theme: {
+    extend: {
+      screens: {
+        xs: '480px',
+      },
+    },
     colors: {
       'white': '#ffffff',
       'blue-900': '#deeaed',
@@ -20,6 +25,7 @@ export default {
       'green-700': '#b9dc89',
       'green-500': '#8ac53a',
       'green-300': '#537623',
+      'green-100': '#1c270c',
       'yellow-800': '#ffe699',
       'yellow-700': '#ffda66',
       'yellow-600': '#ffce33',

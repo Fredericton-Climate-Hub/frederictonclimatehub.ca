@@ -7,3 +7,9 @@
     @apply flex flex-col h-dvh text-100;
   }
 }
+
+@layer components {
+  .section-fs {
+    @apply flex flex-col items-center justify-center gap-y-200 py-400;
+  }
+}
