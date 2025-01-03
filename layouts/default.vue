@@ -32,8 +32,6 @@
           <li>Meeting Schedule</li>
         </ul>
       </div>
-  <footer class="flex-none bg-yellow-800 p-100">
-    <div>&copy;2023-{{ new Date().getFullYear() }} Fredericton Community Climate Hub Inc.</div>
       <div class="max-w-1200 space-y-50">
         <h3 class="font-semibold">
           Get Involved
