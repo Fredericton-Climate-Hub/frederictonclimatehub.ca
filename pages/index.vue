@@ -165,5 +165,74 @@
         </div>
       </div>
     </section>
+
+    <!-- Meeting Schedule -->
+    <section class="section-fs border-t border-dashed border-blue-300 bg-blue-900">
+      <h2 class="mx-auto w-fit rounded-md bg-blue-300 px-100 py-50 text-center uppercase text-blue-900">
+        All-Members Meetings 2025
+      </h2>
+      <div class="mx-auto flex w-3/4 flex-col gap-400 lg:flex-row">
+        <div class="flex w-full flex-col gap-x-200 text-start lg:w-1/2 lg:text-end">
+          <div class="font-thin uppercase tracking-widest">
+            When
+          </div>
+          <div class="divide-y divide-dashed divide-blue-700">
+            <div
+              v-for="date in meetingDates.slice(0, 5)"
+              :key="date"
+              class="py-75 text-150"
+            >
+              {{ date }}
+            </div>
+            <div class="py-75 text-150 text-blue-300">
+              <a
+                href="https://docs.google.com/document/d/1Ohz76sdByp9NuaoMkbJYSQKHKN8bKYNaQ20fAAHROk8/edit?usp=sharing"
+                target="_blank"
+                class="text-100 font-thin uppercase tracking-widest hover:underline"
+              >
+                &raquo; Agenda
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="flex w-full shrink flex-col text-left lg:w-1/2">
+          <div class="font-thin uppercase tracking-widest">
+            Where
+          </div>
+          <div class="h-[320px] py-100 lg:h-full">
+            <span class="sr-only">180 St John St, Fredericton, NB, E3B 4A9</span>
+            <div class="h-full rounded-lg border border-blue-700 p-[2px]">
+              <LeafletMap
+                :center="[45.95797050115421, -66.63825758647747]"
+                :zoom="14"
+                class="h-full rounded-md"
+              >
+                <LeafletMarker
+                  :center="[45.95797050115421, -66.63825758647747]"
+                  title="180 St John St"
+                />
+              </LeafletMap>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
+
+<script lang="ts" setup>
+const meetingDates = [
+  'January 14, 2025, 6:30 - 8:30pm',
+  'February 11, 2025, 6:30 - 8:30pm',
+  'March 11, 2025, 6:30 - 8:30pm',
+  'April 8, 2025, 6:30 - 8:30pm',
+  'May 6, 2025, 6:30 - 8:30pm',
+  'June 3, 2025, 6:30 - 8:30pm',
+  'July 15, 2025, 6:30 - 8:30pm',
+  'August 12, 2025, 6:30 - 8:30pm',
+  'September 9, 2025, 6:30 - 8:30pm',
+  'October 21, 2025, 6:30 - 8:30pm',
+  'November 4, 2025, 6:30 - 8:30pm',
+  'December 16, 2025, 6:30 - 8:30pm',
+]
+</script>
