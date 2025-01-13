@@ -3,7 +3,7 @@
     <header
       :class="[{ 'h-dvh': menuVisible, 'h-fit': !menuVisible }, `sticky top-0 z-[10000] w-full flex-none overflow-y-scroll bg-white p-125 shadow-md lg:h-fit lg:overflow-hidden`]"
     >
-      <div class="flex h-full flex-wrap items-center justify-between lg:flex-nowrap lg:items-end">
+      <div class="flex h-full flex-wrap items-start justify-between lg:flex-nowrap lg:items-end">
         <div class="flex-none">
           <a href="/">
             <nuxt-img
