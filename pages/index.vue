@@ -112,22 +112,27 @@
             <nuxt-img
               src="/img/partners/climatereality.png"
               height="36"
+              format="webp"
             />
             <nuxt-img
               src="/img/partners/fredericton.png"
               height="28"
+              format="webp"
             />
             <nuxt-img
               src="/img/partners/tamarack.png"
               height="36"
+              format="webp"
             />
             <nuxt-img
               src="/img/partners/ccnb.png"
               height="60"
+              format="webp"
             />
             <nuxt-img
               src="/img/partners/unb.png"
               height="42"
+              format="webp"
             />
           </div>
         </div>
@@ -149,6 +154,7 @@
         <nuxt-img
           src="/img/fredericton.png"
           sizes="320px 2xs:420px xs:560px md:640px xl:720px"
+          format="webp"
         />
       </div>
     </section>
@@ -163,6 +169,7 @@
           <nuxt-img
             src="/img/woman-bike-laptop.png"
             width="240px"
+            format="webp"
           />
           <span class="w-2/3 rounded-lg text-125 font-thin uppercase leading-snug tracking-widest text-orange-300">Eco Mobility</span>
         </div>
@@ -170,6 +177,7 @@
           <nuxt-img
             src="/img/circular-economy.png"
             width="240px"
+            format="webp"
           />
           <span class="w-2/3 rounded-lg text-125 font-thin uppercase leading-snug tracking-widest text-orange-300">Circular Economy</span>
         </div>
@@ -177,6 +185,7 @@
           <nuxt-img
             src="/img/green-home.png"
             width="240px"
+            format="webp"
           />
           <span class="w-2/3 rounded-lg text-125 font-thin uppercase leading-snug tracking-widest text-orange-300">Sustainable Buildings</span>
         </div>
@@ -184,6 +193,7 @@
           <nuxt-img
             src="/img/light-bulb.png"
             width="240px"
+            format="webp"
           />
           <span class="w-2/3 rounded-lg text-125 font-thin uppercase leading-snug tracking-widest text-orange-300">Renewable Energy</span>
         </div>
@@ -191,6 +201,7 @@
           <nuxt-img
             src="/img/house-flooded.png"
             width="240px"
+            format="webp"
           />
           <span class="w-2/3 rounded-lg text-125 font-thin uppercase leading-snug tracking-widest text-orange-300">Mitigation</span>
         </div>

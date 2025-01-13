@@ -10,6 +10,7 @@
               src="/img/Logo-Transparent-EN.png"
               alt="Fredericton Community Climate Hub Logo"
               sizes="210px sm:240px md:320px lg:360px"
+              format="webp"
             /></a>
         </div>
         <div class="flex grow justify-end px-100 lg:hidden lg:grow-0 lg:px-0">
@@ -140,6 +141,7 @@
         <nuxt-img
           src="/img/Logo-Transparent-Green-900-EN.png"
           sizes="320px 2xs:420px md:350px lg:350px xl:420px 2xl:420px"
+          format="webp"
         />
         <div class="space-y-100">
           <!-- Address -->
