@@ -66,7 +66,6 @@
             <li>Advisors</li>
             <li>Supporters</li>
             <li>Contact</li>
-            <li>YouTube</li>
             <li>Meeting Schedule</li>
           </ul>
         </div>
@@ -95,8 +94,18 @@
             Get Involved
           </h3>
           <ul class="space-y-50 font-thin leading-5">
-            <li>Join the Hub</li>
-            <li>Partner with Us</li>
+            <li>
+              <a
+                href="https://docs.google.com/forms/d/1V_BJbM0XTcws3-XxfDshNlt9StHDldFL1KsLJpZwg3U"
+                class="hover:underline"
+              >Join the Hub</a>
+            </li>
+            <li>
+              <a
+                href="https://docs.google.com/forms/d/1KEV0h62vndhsry19o3qBI68loUDOrGrkWAFPibkwKLQ"
+                class="hover:underline"
+              >Partner with Us</a>
+            </li>
             <li>Volunteer</li>
             <li>Events</li>
             <li>Campaigns</li>
@@ -109,8 +118,18 @@
             Resources
           </h3>
           <ul class="space-y-50 font-thin leading-5">
-            <li>CoF Community Energy & Emissions Plan</li>
-            <li>National Climate League</li>
+            <li>
+              <a
+                href="https://www.fredericton.ca/sites/default/files/2023-05/cof_ceep_synposis_2022_20220614_0_1.pdf"
+                class="hover:underline"
+              >CoF Community Energy & Emissions Plan</a>
+            </li>
+            <li>
+              <a
+                href="https://www.fredericton.ca/sites/default/files/2023-05/cof_corp_ceep_synposis_2022_20220614_1_0.pdf"
+                class="hover:underline"
+              >CoF Corporate Energy & Emissions Plan</a>
+            </li>
           </ul>
         </div>
         <div class="max-w-1200 space-y-50">
@@ -138,6 +157,12 @@
             </li>
             <li>
               <a
+                href="https://www.climatereality.ca/ncl"
+                class="hover:underline"
+              >National Climate League (NCL)</a>
+            </li>
+            <li>
+              <a
                 class="hover:underline"
                 href="https://climatetrace.org/"
               >Climate Trace</a>
@@ -150,7 +175,12 @@
           </h3>
           <ul class="space-y-50 font-thin leading-5">
             <li>By-laws</li>
-            <li>Letter's Patent</li>
+            <li>
+              <a
+                href="https://drive.google.com/file/d/1dr68SUJGf9o0EphMcrmDyNl7SXlpuftA/view?usp=drive_link"
+                class="hover:underline"
+              >Letters Patent</a>
+            </li>
             <li>Privacy</li>
             <li>Disclaimer</li>
           </ul>
