@@ -2,10 +2,10 @@
   <div class="text-center">
     <!-- Hero -->
     <section
-      class="section-fs h-dvh gap-y-0 py-0 font-mono text-green-100"
+      class="section-fs min-h-dvh gap-y-0 py-0 font-mono text-green-100"
       style="background: radial-gradient(rgba(255, 255, 255, 0.96) 0%, rgba(255, 255, 255, 0.96) 20%, rgba(255, 255, 255, 0.8) 100%), url('/img/climate-icons.png') 100px 100px;"
     >
-      <div class="flex w-[85%] grow flex-col justify-center p-100">
+      <div class="flex w-[85%] grow flex-col justify-center p-200 2xl:w-3/5">
         <!-- Grid -->
         <div class="grid w-full grid-cols-6 gap-25 text-100 2xs:text-150 xs:text-300 sm:grid-cols-9 md:text-400 lg:text-600">
           <span class="flex aspect-square items-center justify-center rounded-lg bg-metallic-900 p-25 leading-none text-orange-500">
@@ -105,15 +105,30 @@
           Made in Fredericton,NB
         </div>
       </div>
-      <div class="grow-0">
+      <div class="w-full">
         <span class="text-75">We are Supported by</span>
         <div class="w-full bg-green-100 p-150">
-          <div class="mx-auto grid w-full grid-cols-3 items-center gap-x-200 gap-y-100 sm:grid-cols-5 lg:gap-x-400 xl:w-3/4 2xl:w-2/3 2xl:gap-x-600">
-            <img src="/img/partners/climatereality.svg">
-            <img src="/img/partners/fredericton.png">
-            <img src="/img/partners/tamarack.png">
-            <img src="/img/partners/ccnb.png">
-            <img src="/img/partners/unb.png">
+          <div class="mx-auto flex w-full flex-wrap items-center justify-center gap-x-200 gap-y-100 text-center lg:gap-x-400">
+            <nuxt-img
+              src="/img/partners/climatereality.png"
+              height="36"
+            />
+            <nuxt-img
+              src="/img/partners/fredericton.png"
+              height="28"
+            />
+            <nuxt-img
+              src="/img/partners/tamarack.png"
+              height="36"
+            />
+            <nuxt-img
+              src="/img/partners/ccnb.png"
+              height="60"
+            />
+            <nuxt-img
+              src="/img/partners/unb.png"
+              height="42"
+            />
           </div>
         </div>
       </div>
@@ -130,10 +145,11 @@
       <div class="w-3/4 rounded-xl border border-dashed border-green-300 bg-green-700 p-200 text-125 text-green-100 xl:text-150 2xl:w-1/2">
         The advancement of climate action through education and mobilization in the Greater Fredericton Region, empowering members of our community to become environmentally conscious residents who contribute to a resilient, equitable, and livable city for all.
       </div>
-      <div class="w-full flex-none px-200 sm:w-3/4 sm:px-0 lg:w-1/2">
-        <img
+      <div>
+        <nuxt-img
           src="/img/fredericton.png"
-        >
+          sizes="320px 2xs:420px xs:560px md:640px xl:720px"
+        />
       </div>
     </section>
 
@@ -144,23 +160,38 @@
       </h2>
       <div class="mx-auto flex w-4/5 flex-row flex-wrap justify-center gap-100 2xl:w-3/4">
         <div class="flex aspect-square w-full flex-col items-center justify-start xs:w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6">
-          <img src="/img/woman-bike-laptop.png">
+          <nuxt-img
+            src="/img/woman-bike-laptop.png"
+            width="240px"
+          />
           <span class="w-2/3 rounded-lg text-125 font-thin uppercase leading-snug tracking-widest text-orange-300">Eco Mobility</span>
         </div>
         <div class="flex aspect-square w-full flex-col items-center justify-start xs:w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6">
-          <img src="/img/circular-economy.png">
+          <nuxt-img
+            src="/img/circular-economy.png"
+            width="240px"
+          />
           <span class="w-2/3 rounded-lg text-125 font-thin uppercase leading-snug tracking-widest text-orange-300">Circular Economy</span>
         </div>
         <div class="flex aspect-square w-full flex-col items-center justify-start xs:w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6">
-          <img src="/img/green-home.png">
+          <nuxt-img
+            src="/img/green-home.png"
+            width="240px"
+          />
           <span class="w-2/3 rounded-lg text-125 font-thin uppercase leading-snug tracking-widest text-orange-300">Sustainable Buildings</span>
         </div>
         <div class="flex aspect-square w-full flex-col items-center justify-start xs:w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6">
-          <img src="/img/light-bulb.png">
+          <nuxt-img
+            src="/img/light-bulb.png"
+            width="240px"
+          />
           <span class="w-2/3 rounded-lg text-125 font-thin uppercase leading-snug tracking-widest text-orange-300">Renewable Energy</span>
         </div>
         <div class="flex aspect-square w-full flex-col items-center justify-start xs:w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6">
-          <img src="/img/house-flooded.png">
+          <nuxt-img
+            src="/img/house-flooded.png"
+            width="240px"
+          />
           <span class="w-2/3 rounded-lg text-125 font-thin uppercase leading-snug tracking-widest text-orange-300">Mitigation</span>
         </div>
       </div>

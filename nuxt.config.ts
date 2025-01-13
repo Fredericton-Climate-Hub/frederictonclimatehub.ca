@@ -1,4 +1,5 @@
-import url from 'url'
+import url from "url"
+import tailwindConfig from "./tailwind.config"
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -38,5 +39,10 @@ export default defineNuxtConfig({
     config: {
       stylistic: true,
     },
+  },
+  image: {
+    screens: Object.fromEntries(Object
+      .entries(tailwindConfig.theme.screens)
+      .map(([screen, size]) => [screen, parseInt(size.replace(/px$/, ''))])),
   },
 })

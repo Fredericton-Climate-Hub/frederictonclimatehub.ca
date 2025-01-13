@@ -8,11 +8,14 @@ export default {
     'pages/**/*.vue',
   ],
   theme: {
-    extend: {
-      screens: {
-        '2xs': '320px',
-        'xs': '480px',
-      },
+    screens: {
+      '2xs': '320px',
+      'xs': '480px',
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
     },
     colors: {
       'white': '#ffffff',
@@ -52,7 +55,9 @@ export default {
       100: '18px',
       125: '1.25rem',
       150: '1.5rem',
+      175: '1.75rem',
       200: '2rem',
+      250: '2.5rem',
       300: '3rem',
       400: '4rem',
       500: '5rem',

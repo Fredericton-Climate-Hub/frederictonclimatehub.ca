@@ -3,21 +3,21 @@
     <header
       :class="[{ 'h-dvh': menuVisible, 'h-fit': !menuVisible }, `sticky top-0 z-[10000] w-full flex-none overflow-y-scroll bg-white p-125 shadow-md lg:h-fit lg:overflow-hidden`]"
     >
-      <div class="flex h-full flex-wrap items-start lg:flex-nowrap lg:items-end lg:justify-between">
+      <div class="flex h-full flex-wrap items-center justify-between lg:flex-nowrap lg:items-end">
         <div class="flex-none">
           <a href="/">
-            <img
+            <nuxt-img
               src="/img/Logo-Transparent-EN.png"
-              class="w-[240px]"
-            >
-          </a>
+              alt="Fredericton Community Climate Hub Logo"
+              sizes="210px sm:240px md:320px lg:360px"
+            /></a>
         </div>
         <div class="flex grow justify-end px-100 lg:hidden lg:grow-0 lg:px-0">
           <button
             class=""
             @click.prevent.stop="menuVisible = !menuVisible"
           >
-            <IconMenu class="size-300" />
+            <IconMenu class="size-200 sm:size-250 md:size-300" />
           </button>
         </div>
         <nav :class="[{ 'hidden lg:flex': !menuVisible, 'flex': menuVisible }, `w-full flex-col items-end justify-start gap-x-150 divide-y divide-dashed divide-metallic-700 px-150 py-200 text-200 uppercase tracking-wider text-green-100 lg:grow lg:flex-row lg:items-end lg:justify-end lg:divide-y-0 lg:py-0 lg:text-125`]">
@@ -137,10 +137,10 @@
       </div>
       <!-- Footer -->
       <div class="flex flex-col justify-between space-y-100 md:w-1/2 lg:w-1/3">
-        <img
+        <nuxt-img
           src="/img/Logo-Transparent-Green-900-EN.png"
-          class="w-[300px] xl:w-[400px]"
-        >
+          sizes="320px 2xs:420px md:350px lg:350px xl:420px 2xl:420px"
+        />
         <div class="space-y-100">
           <!-- Address -->
           <div class="flex flex-col xl:flex-row">
