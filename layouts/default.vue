@@ -70,6 +70,26 @@
             <li>Meeting Schedule</li>
           </ul>
         </div>
+        <!-- <div class="max-w-1200 space-y-50">
+          <h3 class="font-semibold">
+            Projects
+          </h3>
+          <ul class="space-y-50 font-thin leading-5">
+            <li>Circular Economy</li>
+            <li>Active Transit</li>
+          </ul>
+        </div>
+        <div class="max-w-1200 space-y-50">
+          <h3 class="font-semibold">
+            Blog
+          </h3>
+          <ul class="space-y-50 font-thin leading-5">
+            <li>News</li>
+            <li>Fredericton</li>
+            <li>New Brunswick</li>
+            <li>Archive</li>
+          </ul>
+        </div> -->
         <div class="max-w-1200 space-y-50">
           <h3 class="font-semibold">
             Get Involved
@@ -137,12 +157,14 @@
         </div>
       </div>
       <!-- Footer -->
-      <div class="flex flex-col justify-between space-y-100 md:w-1/2 lg:w-1/3">
-        <nuxt-img
-          src="/img/Logo-Transparent-Green-900-EN.png"
-          sizes="320px 2xs:420px md:350px lg:350px xl:420px 2xl:420px"
-          format="webp"
-        />
+      <div class="flex flex-col justify-between space-y-200 md:w-1/2 lg:w-1/3">
+        <div>
+          <nuxt-img
+            src="/img/Logo-Transparent-Green-900-EN.png"
+            sizes="320px 2xs:420px md:350px lg:350px xl:420px"
+            format="webp"
+          />
+        </div>
         <div class="space-y-100">
           <!-- Address -->
           <div class="flex flex-col xl:flex-row">
