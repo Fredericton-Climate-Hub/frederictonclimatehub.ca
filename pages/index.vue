@@ -220,11 +220,11 @@
           </div>
           <div class="divide-y divide-dashed divide-blue-700">
             <div
-              v-for="date in meetingDates.slice(0, 5)"
+              v-for="([date, start, end], index) in meetings.slice(upperBound, lowerBound)"
               :key="date"
-              class="py-75 text-150"
+              :class="[`py-75 text-150`, { 'font-bold': index === nextMeetingIndex - upperBound }]"
             >
-              {{ date }}
+              {{ date }}, {{ start }} - {{ end }}pm
             </div>
             <div class="py-75 text-150 text-blue-300">
               <a
@@ -263,18 +263,26 @@
 </template>
 
 <script lang="ts" setup>
-const meetingDates = [
-  'January 14, 2025, 6:30 - 8:30pm',
-  'February 11, 2025, 6:30 - 8:30pm',
-  'March 11, 2025, 6:30 - 8:30pm',
-  'April 8, 2025, 6:30 - 8:30pm',
-  'May 6, 2025, 6:30 - 8:30pm',
-  'June 3, 2025, 6:30 - 8:30pm',
-  'July 15, 2025, 6:30 - 8:30pm',
-  'August 12, 2025, 6:30 - 8:30pm',
-  'September 9, 2025, 6:30 - 8:30pm',
-  'October 21, 2025, 6:30 - 8:30pm',
-  'November 4, 2025, 6:30 - 8:30pm',
-  'December 16, 2025, 6:30 - 8:30pm',
+const meetings = [
+  ['January 14, 2025', '6:30', '8:30'],
+  ['February 11, 2025', '6:30', '8:30'],
+  ['March 11, 2025', '6:30', '8:30'],
+  ['April 8, 2025', '6:30', '8:30'],
+  ['May 6, 2025', '6:30', '8:30'],
+  ['June 3, 2025', '6:30', '8:30'],
+  ['July 15, 2025', '6:30', '8:30'],
+  ['August 12, 2025', '6:30', '8:30'],
+  ['September 9, 2025', '6:30', '8:30'],
+  ['October 21, 2025', '6:30', '8:30'],
+  ['November 4, 2025', '6:30', '8:30'],
+  ['December 16, 2025', '6:30', '8:30'],
 ]
+
+const now = new Date()
+const today = new Date(`${now.getFullYear()}-${now.getMonth() + 1}-${now.getDate()}`)
+const timestamps = meetings.map(([d]) => new Date(d).valueOf())
+const nextMeetingIndex = timestamps.findIndex(d => today.valueOf() <= d)
+const previousMeetingIndex = timestamps.findIndex(d => today.valueOf() - (14 * 24 * 60 * 60 * 1000) <= d)
+const upperBound = Math.max(0, Math.min(meetings.length - 5, Math.min(previousMeetingIndex, nextMeetingIndex)))
+const lowerBound = upperBound + 5
 </script>
