@@ -197,24 +197,53 @@
         </div>
         <div class="space-y-100">
           <!-- Address -->
-          <div class="flex flex-col xl:flex-row">
-            <span>180 St John St</span>
-            <span class="hidden xl:block">,&ensp;</span>
+          <div class="flex flex-col">
+            <span class="sr-only">Address</span>
+            <span>180 Saint John Street</span>
             <span>Fredericton, NB</span>
-            <span class="hidden xl:block">,&ensp;</span>
-            <span>E3B 9A1</span>
-            <span class="hidden xl:block">,&ensp;</span>
+            <span>E3B 4A9</span>
             <span>Canada</span>
           </div>
           <!-- Contact -->
-          <div class="flex flex-col">
-            <a href="https://frederictonclimatehub.ca">Web: frederictonclimatehub.ca</a>
-            <a href="mailto:hello@example.com">Email: info@frederictonclimatehub.ca</a>
-            <span>Phone: 506-999-9999</span>
-          </div>
+          <dl class="flex flex-col">
+            <dt class="sr-only">
+              Email
+            </dt>
+            <dd class="inline-flex items-center space-x-50">
+              <IconMail />
+              <a
+                href="https://docs.google.com/forms/d/1OVHlw7O1mym-aOoc7LbnObPEkxmjtkuZcO0d5fu8xMQ"
+                class="hover:underline"
+              >frederictonhub@gmail.com</a>
+            </dd>
+            <dt class="sr-only">
+              Phone
+            </dt>
+            <dd class="inline-flex items-center space-x-50">
+              <IconPhone /><span>506-230-6513</span>
+            </dd>
+            <dt class="sr-only">
+              Facebook
+            </dt>
+            <dd class="inline-flex items-center space-x-50">
+              <IconFacebook /><a
+                href="https://www.facebook.com/groups/1267647161107128/"
+                class="hover:underline"
+              >Facebook</a>
+            </dd>
+            <dt class="sr-only">
+              YouTube
+            </dt>
+            <dd class="inline-flex items-center space-x-50">
+              <IconYouTube /><a
+                href="https://www.youtube.com/@FrederictonCommunityClimateHub"
+                class="hover:underline"
+              >YouTube</a>
+            </dd>
+          </dl>
           <!-- Copyright -->
-          <div class="flex flex-col xl:flex-row">
-            <span>&copy; 2024-{{ new Date().getFullYear() }}</span><span class="hidden xl:block">&ensp;</span>
+          <div class="inline-flex space-x-50 text-pretty">
+            <span class="text-nowrap">&copy; 2024-{{ new Date().getFullYear() }}</span>
             <span>Fredericton Community Climate Hub Inc.</span>
           </div>
         </div>
