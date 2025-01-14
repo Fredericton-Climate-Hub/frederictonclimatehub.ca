@@ -53,10 +53,7 @@
           <span class="flex aspect-square items-center justify-center rounded-lg bg-metallic-900 p-25 leading-none text-orange-300">
             N
           </span>
-          <span class="hidden h-full rounded-lg bg-metallic-900 sm:block" />
-          <span class="hidden h-full rounded-lg bg-metallic-900 sm:block" />
-          <span class="hidden h-full rounded-lg bg-metallic-900 sm:block" />
-          <span class="flex aspect-square items-center justify-center rounded-lg bg-metallic-900 p-25 leading-none text-green-500">
+          <span class="flex aspect-square items-center justify-center rounded-lg bg-metallic-900 p-25 leading-none text-green-500 sm:col-start-3">
             C
           </span>
           <span class="flex aspect-square items-center justify-center rounded-lg bg-metallic-900 p-25 leading-none text-green-500">
@@ -77,9 +74,7 @@
           <span class="flex aspect-square items-center justify-center rounded-lg bg-metallic-900 p-25 leading-none text-green-500">
             E
           </span>
-          <span class="hidden h-full rounded-lg bg-metallic-900 sm:block" />
-          <span class="hidden h-full rounded-lg bg-metallic-900 sm:block" />
-          <span class="flex aspect-square items-center justify-center rounded-lg bg-metallic-900 p-25 leading-none text-green-300">
+          <span class="flex aspect-square items-center justify-center rounded-lg bg-metallic-900 p-25 leading-none text-green-300 sm:col-start-4">
             A
           </span>
           <span class="flex aspect-square items-center justify-center rounded-lg bg-metallic-900 p-25 leading-none text-green-300">
@@ -97,11 +92,8 @@
           <span class="flex aspect-square items-center justify-center rounded-lg bg-metallic-900 p-25 leading-none text-green-300">
             N
           </span>
-          <span class="h-full rounded-lg bg-metallic-900" />
-          <span class="h-full rounded-lg bg-metallic-900" />
-          <span class="hidden h-full rounded-lg bg-metallic-900 sm:block" />
         </div>
-        <div class="w-full py-50 text-start font-mono text-85 md:text-100">
+        <div class="w-full py-50 text-start font-mono text-85 sm:text-end md:text-100">
           Made in Fredericton,NB
         </div>
       </div>
