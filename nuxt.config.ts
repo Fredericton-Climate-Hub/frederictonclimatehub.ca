@@ -1,5 +1,5 @@
-import url from "url"
-import tailwindConfig from "./tailwind.config"
+import url from 'url'
+import tailwindConfig from './tailwind.config'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -30,6 +30,9 @@ export default defineNuxtConfig({
   },
   compatibilityDate: '2024-11-01',
   nitro: {
+    prerender: {
+      routes: [`/`],
+    },
     publicAssets: [
       {
         baseURL: `leaflet/img/`,
