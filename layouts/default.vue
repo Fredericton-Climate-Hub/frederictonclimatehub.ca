@@ -190,7 +190,7 @@
       <div class="flex flex-col justify-between space-y-200 md:w-1/2 lg:w-1/3">
         <div>
           <nuxt-img
-            src="/img/Logo-Transparent-Green-900-EN.png"
+            src="/img/Logo-Transparent-green-900-EN.png"
             sizes="320px 2xs:420px md:350px lg:350px xl:420px"
             format="webp"
           />
