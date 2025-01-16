@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Rubik Mono One';
+    src: url('/fonts/RubikMonoOne-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }  
+  #app {
+    @apply flex flex-col h-dvh text-100;
+  }
+}
+
+@layer components {
+  .section-fs {
+    @apply flex flex-col items-center justify-center gap-y-200 py-400;
+  }
+
+  .icon {
+    @apply size-100 stroke-2 fill-none;
+  }
+}
