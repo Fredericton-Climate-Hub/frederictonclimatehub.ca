@@ -17,6 +17,14 @@ export default defineNuxtConfig({
     // REFACTOR: only load this on pages with maps
     `~/node_modules/leaflet/dist/leaflet.css`,
   ],
+  runtimeConfig: {
+    public: {
+      contact: {
+        email: 'info@example.com',
+        phone: '555-123-4567',
+      },
+    },
+  },
   alias: {
     types: url.fileURLToPath(new URL(`./types`, import.meta.url)),
   },

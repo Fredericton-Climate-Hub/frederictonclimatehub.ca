@@ -214,13 +214,13 @@
               <a
                 href="https://docs.google.com/forms/d/1OVHlw7O1mym-aOoc7LbnObPEkxmjtkuZcO0d5fu8xMQ"
                 class="hover:underline"
-              >frederictonhub@gmail.com</a>
+              >{{ email }}</a>
             </dd>
             <dt class="sr-only">
               Phone
             </dt>
             <dd class="inline-flex items-center space-x-50">
-              <IconPhone /><span>506-230-6513</span>
+              <IconPhone /><span>{{ phone }}</span>
             </dd>
             <dt class="sr-only">
               Facebook
@@ -253,5 +253,6 @@
 </template>
 
 <script lang="ts" setup>
+const { email, phone } = useRuntimeConfig().public.contact
 const menuVisible = ref(false)
 </script>
