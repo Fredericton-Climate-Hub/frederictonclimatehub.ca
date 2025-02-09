@@ -266,7 +266,7 @@
 </template>
 
 <script lang="ts" setup>
-const { data: nav } = await useAsyncData(() => queryCollectionNavigation('default', ['navigationTitle'])
+const { data: nav } = await useAsyncData(() => queryCollectionNavigation('default', ['navigationTitle']))
 const menuExpanded = ref<string>('')
 
 function toggleMenu(path: string, reset?: string) {
