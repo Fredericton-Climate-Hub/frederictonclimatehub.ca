@@ -1,51 +1,64 @@
 <template>
-  <div>
-    <header
-      :class="[{ 'h-dvh': menuVisible, 'h-fit': !menuVisible }, `sticky top-0 z-[10000] w-full flex-none overflow-y-scroll bg-white p-125 shadow-md lg:h-fit lg:overflow-hidden`]"
-    >
-      <div class="flex h-full flex-wrap items-start justify-between lg:flex-nowrap lg:items-end">
-        <div class="flex-none">
-          <a href="/">
-            <nuxt-img
-              src="/img/Logo-Transparent-EN.png"
-              alt="Fredericton Community Climate Hub Logo"
-              sizes="210px sm:240px md:320px lg:360px"
-              format="webp"
-            /></a>
+  <div class="flex h-fit flex-col">
+    <header :class="['sticky top-0 z-[10000] w-full flex-none overflow-y-scroll bg-white shadow-md lg:h-fit lg:overflow-y-visible', { 'h-dvh': menuExpanded }]">
+      <div class="flex h-full flex-col items-start justify-between lg:flex-row lg:flex-nowrap lg:items-end">
+        <div class="w-full flex-none lg:w-fit">
+          <div class="flex w-full flex-none items-center justify-between px-200 py-125">
+            <a
+              href="/"
+            >
+              <nuxt-img
+                src="/img/Logo-Transparent-EN.png"
+                alt="Fredericton Community Climate Hub Logo"
+                sizes="210px sm:240px md:320px lg:360px"
+                format="webp"
+              /></a>
+
+            <button
+              class="inline-flex items-center justify-end space-x-100 lg:hidden lg:grow-0 lg:px-0"
+              @click.prevent.stop="menuExpanded = menuExpanded ? '' : '/'"
+            >
+              <span class="text-125 uppercase">Menu</span>
+              <IconMenu class="size-150 sm:size-200 md:size-250" />
+            </button>
+          </div>
         </div>
-        <div class="flex grow justify-end px-100 lg:hidden lg:grow-0 lg:px-0">
-          <button
-            class=""
-            @click.prevent.stop="menuVisible = !menuVisible"
-          >
-            <IconMenu class="size-200 sm:size-250 md:size-300" />
-          </button>
-        </div>
-        <nav :class="[{ 'hidden lg:flex': !menuVisible, 'flex': menuVisible }, `w-full flex-col items-end justify-start gap-x-150 divide-y divide-dashed divide-metallic-700 px-150 py-200 text-200 uppercase tracking-wider text-green-100 lg:grow lg:flex-row lg:items-end lg:justify-end lg:divide-y-0 lg:py-0 lg:text-125`]">
-          <a
-            href="#"
-            class="inline-flex w-full py-75 hover:text-green-300 lg:w-fit lg:py-0"
-          >
-            About
-          </a>
-          <a
-            href="#"
-            class="inline-flex w-full py-75 hover:text-green-300 lg:w-fit lg:py-0"
-          >
-            Projects
-          </a>
-          <a
-            href="#"
-            class="inline-flex w-full py-75 hover:text-green-300 lg:w-fit lg:py-0"
-          >
-            Get Involved
-          </a>
-          <a
-            href="#"
-            class="inline-flex w-full py-75 hover:text-green-300 lg:w-fit lg:py-0"
-          >
-            Resources
-          </a>
+        <nav
+          role="navigation"
+          aria-label="Main"
+          :class="['w-full grow', { 'hidden lg:flex': !menuExpanded, 'flex': menuExpanded }]"
+        >
+          <ul class="flex w-full grow flex-col px-150 py-200 text-200 uppercase tracking-wider text-green-100 lg:flex-row lg:items-end lg:justify-end lg:py-0 lg:text-125">
+            <li
+              v-for="item of nav"
+              :key="item.stem"
+              :class="['group space-y-100 border-b border-dashed border-metallic-700 p-100 last:border-b-0 lg:space-y-0 lg:border-b-4 lg:border-t-0 lg:border-solid lg:last:border-b-4', { 'border-white text-green-500 lg:border-green-500': [menuExpanded, $route.path].some(p => p.startsWith(item.path)), 'hover:text-green-500 lg:border-white lg:hover:border-green-500': [menuExpanded, $route.path].every(p => !p.startsWith(item.path)) }]"
+            >
+              <a
+                :href="item.path"
+                class="inline-flex w-full cursor-pointer items-center justify-between space-x-75 lg:w-fit"
+                @click.stop="event => (item.children?.length > 1 && event.preventDefault()) || toggleMenu(item.path, '/')"
+              >
+                <span>{{ item.title }}</span>
+                <IconArrowAngle
+                  v-if="item.children?.length > 1"
+                  :class="['flex size-200 lg:size-100', { 'rotate-180': menuExpanded === item.path }]"
+                />
+              </a>
+              <ul
+                v-if="item.children?.length > 1"
+                :class="['w-full flex-col px-200 py-100 text-green-300 lg:absolute lg:left-0 lg:top-full lg:flex-row lg:justify-center lg:space-x-125 lg:border-t lg:border-green-900 lg:p-125 lg:px-0 lg:py-100 lg:drop-shadow-lg', { 'flex bg-blue-900/40 lg:bg-white': menuExpanded === item.path, 'hidden bg-white': menuExpanded !== item.path }]"
+              >
+                <li
+                  v-for="child in item.children"
+                  :key="child.stem"
+                  class="border-b-0 border-t border-dashed border-metallic-700 py-100 first:border-t-0 last:content-none hover:text-green-500 lg:border-none lg:py-0 lg:after:ml-100 lg:after:font-thin lg:after:text-green-700 lg:after:content-['/'] lg:after:last:content-none"
+                >
+                  <a :href="child.path">{{ child.navigationTitle ?? child.title }}</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
@@ -253,6 +266,12 @@
 </template>
 
 <script lang="ts" setup>
+const { data: nav } = await useAsyncData(() => queryCollectionNavigation('default', ['navigationTitle'])
+const menuExpanded = ref<string>('')
+
+function toggleMenu(path: string, reset?: string) {
+  menuExpanded.value = menuExpanded.value !== path ? path : (reset ?? '')
+}
+
 const { email, phone } = useRuntimeConfig().public.contact
-const menuVisible = ref(false)
 </script>

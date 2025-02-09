@@ -15,6 +15,12 @@
   }
 }
 
+@layer base {
+  #app {
+    @apply flex h-fit flex-col;
+  }
+}
+
 @layer components {
   .section-fs {
     @apply flex flex-col items-center justify-center gap-y-200 py-400;
