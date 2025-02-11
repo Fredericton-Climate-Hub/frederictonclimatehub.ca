@@ -1,8 +1,6 @@
 <script setup lang="ts">
-import { NuxtLayout } from '#components'
-
 const route = useRoute()
-const { data: page } = await useAsyncData(() => queryCollection('default')
+const { data: page } = await useAsyncData(() => queryCollection('pages')
   .path(route.path)
   .first())
 
