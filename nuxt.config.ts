@@ -1,5 +1,5 @@
-import url from 'url'
-import tailwindConfig from './tailwind.config'
+import url from "url"
+import tailwindConfig from "./tailwind.config"
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -28,7 +28,7 @@ export default defineNuxtConfig({
   alias: {
     types: url.fileURLToPath(new URL(`./types`, import.meta.url)),
   },
-  compatibilityDate: '2024-11-01',
+  compatibilityDate: '2025-02-10',
   nitro: {
     prerender: {
       routes: [`/`],
