@@ -10,14 +10,9 @@
     font-style: normal;
     font-display: swap;
   }  
+  
   #app {
-    @apply flex flex-col h-dvh text-100;
-  }
-}
-
-@layer base {
-  #app {
-    @apply flex h-fit flex-col;
+    @apply flex flex-col h-fit text-100;
   }
 }
 
