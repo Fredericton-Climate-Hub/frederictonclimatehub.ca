@@ -6,6 +6,7 @@ export default defineContentConfig({
       type: 'page',
       source: {
         include: '**/*.md',
+        cwd: 'content/pages',
       },
       schema: z.object({
         navigationTitle: z.string().optional(),

@@ -4,7 +4,7 @@
       class="flex w-full justify-center bg-blue-900"
       role="banner"
     >
-      <h1 class="p-300 text-300">
+      <h1 class="p-300 text-300 xl:text-400 2xl:text-500">
         {{ title ?? $route.name }}
       </h1>
     </header>
@@ -22,7 +22,7 @@ defineProps<{
 
 <style>
 h2 {
-  @apply text-200 mb-75 mt-200;
+  @apply text-200 xl:text-250 2xl:text-300 mb-75 mt-200;
 }
 
 p {
