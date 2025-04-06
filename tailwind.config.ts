@@ -1,4 +1,4 @@
-import tailwindForms from "@tailwindcss/forms"
+import tailwindForms from '@tailwindcss/forms'
 import type { Config } from 'tailwindcss'
 
 export default {
@@ -8,6 +8,11 @@ export default {
     'pages/**/*.vue',
   ],
   theme: {
+    extend: {
+      aspectRatio: {
+        '5/7': '5/7',
+      },
+    },
     screens: {
       '2xs': '320px',
       'xs': '480px',
