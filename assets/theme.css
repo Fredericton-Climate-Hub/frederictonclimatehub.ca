@@ -9,10 +9,14 @@
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-  }  
-  
+  }
+
+  body {
+    @apply text-100 xl:text-125 2xl:text-150;
+  }
+
   #app {
-    @apply flex flex-col h-fit text-100;
+    @apply flex h-fit flex-col text-100;
   }
 }
 

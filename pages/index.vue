@@ -139,16 +139,25 @@
       <h2 class="w-fit rounded-md bg-green-300 px-100 py-50 text-center uppercase text-green-900">
         Our Goal
       </h2>
-      <div class="w-3/4 rounded-xl border border-dashed border-green-300 bg-green-700 p-200 text-125 text-green-100 xl:text-150 2xl:w-1/2">
+      <iframe
+        src="https://www.youtube.com/embed/hW3rrovHE8w?si=nryJDctpNmu1ihvi"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+        class="aspect-[1.78] w-[375px] sm:w-[480px] md:w-[600px] lg:w-[800px]"
+      />
+      <div class="w-5/6 rounded-xl border border-dashed border-green-300 bg-green-700 p-200 text-125 text-green-100 xl:text-150 2xl:w-1/2">
         The advancement of climate action through education and mobilization in the Greater Fredericton Region, empowering members of our community to become environmentally conscious residents who contribute to a resilient, equitable, and livable city for all.
       </div>
-      <div>
+      <!-- <div>
         <nuxt-img
           src="/img/fredericton.png"
           sizes="320px 2xs:420px xs:560px md:640px xl:720px"
           format="webp"
         />
-      </div>
+      </div> -->
     </section>
 
     <!-- Topics -->
