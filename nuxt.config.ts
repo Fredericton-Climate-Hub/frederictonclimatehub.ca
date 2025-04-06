@@ -1,5 +1,5 @@
-import url from "url"
-import tailwindConfig from "./tailwind.config"
+import url from 'url'
+import tailwindConfig from './tailwind.config'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -27,6 +27,9 @@ export default defineNuxtConfig({
   },
   alias: {
     types: url.fileURLToPath(new URL(`./types`, import.meta.url)),
+  },
+  routeRules: {
+    '/*': { swr: 60 * 60 * 24 }, // 1 day
   },
   compatibilityDate: '2025-02-10',
   nitro: {
