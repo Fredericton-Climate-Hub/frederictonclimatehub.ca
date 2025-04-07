@@ -27,6 +27,8 @@ jobs:
         run: npm install --global wrangler
       - name: Copy header rules
         run: cp .cloudflare/headers dist/_headers
+      - name: Add last-modified timestamp
+        run: sed -i -e "s|<LAST_MODIFIED>|$(date -u +"%a, %d %b %Y %H:%M:%S GMT")|g" dist/_headers
       - name: Deploy
         run: npx wrangler pages deploy dist --project-name frederictonclimatehubca
         env:
