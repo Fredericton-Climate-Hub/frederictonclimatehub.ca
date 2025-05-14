@@ -209,6 +209,25 @@
       </div>
     </section>
 
+    <section class="section-fs border-t border-dashed border-yellow-300 bg-yellow-900">
+      <h2 class="mx-auto w-fit rounded-md bg-yellow-300 px-100 py-50 text-center uppercase text-yellow-900">
+        Zero-Waste Household Pilot Project
+      </h2>
+      <div class="w-5/6 rounded-xl border border-dashed border-yellow-300 bg-yellow-700 p-200 text-125 text-yellow-100 xl:text-150 2xl:w-1/2">
+        <p class="mb-100">
+          Fredericton households waste $1,600 worth of groceries
+          every year, straining our community resources and our
+          climate.
+        </p>
+        <p>Our pilot project delivers you the tools to reduce your household food waste, increase your grocery budget, and help us lower the impact on our community.</p>
+      </div>
+      <a
+        href="https://docs.google.com/forms/d/1ZPyEtLfcJQwzTDTT528r1WGanfBojKpLVWr8F3gzj_Q"
+        class="mx-auto w-fit rounded-md bg-yellow-300 px-100 py-50 text-center uppercase text-yellow-900"
+        target="_blank"
+      >Sign up</a>
+    </section>
+
     <!-- Meeting Schedule -->
     <section class="section-fs border-t border-dashed border-blue-300 bg-blue-900">
       <h2 class="mx-auto w-fit rounded-md bg-blue-300 px-100 py-50 text-center uppercase text-blue-900">
